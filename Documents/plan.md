@@ -1,0 +1,29 @@
+- App
+    - Header: Contains the logo of and EncircledInitials of the profile
+    - SideBar: Contains navigation links to Home and Profile.
+    - MainContentRoutes
+        - HomeRoute: Displayed when users navigate to the home page.
+            - PostFeed: Contains all posts in the feed.
+                - Post: Represents a single post.
+                    - EncircledInitials
+                    - Bio
+                    - ProfileName
+                    - PostContent: The main content of the post.
+                    - CommentsPreviewRoute: Shows a preview of up to three comments.
+                        - Comment: Represents a single comment.
+                            - EncircledInitials
+                            - Name of profile
+                            - CommentContent
+                    - CommentsExpandedRoute: Shows all comments
+                        - Comment
+                    - CommentForm: A form to add a new comment to the post.
+        - PostRoute: Displayed when a user clicks on a post's title.
+            - FullPost: Shows the complete post and all its comments.
+                - Post (reuses the Post component).
+                    - Same as the earlier post but only CommentsExpanded.
+        - ProfileRoute: Displayed when navigating to a user profile.
+            - UserProfile: Displays the user's profile information.
+            - ProfileForm: Form to view or edit the user's information.
+                - FormField: Reusable component for each field in the form.
+        - NewPostRoute: A separate page to create a new post.
+            - NewPostForm: Form to submit a new post.
