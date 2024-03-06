@@ -1,0 +1,5 @@
+export function ProfileRoute() {
+    return (
+        <></>
+    )
+}

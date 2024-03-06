@@ -1,6 +1,6 @@
-- App
+- App: A vite initialized React app.
     - Header: Contains the logo of and EncircledInitials of the profile
-    - SideBar: Contains navigation links to Home and Profile.
+    - LeftSideBar: Contains navigation links to Home and Profile.
     - MainContentRoutes
         - HomeRoute: Displayed when users navigate to the home page.
             - PostFeed: Contains all posts in the feed.

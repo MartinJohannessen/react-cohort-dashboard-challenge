@@ -1,0 +1,10 @@
+@import url('Header.css');
+@import url('LeftSideBar.css');
+@import url('Body.css');
+
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

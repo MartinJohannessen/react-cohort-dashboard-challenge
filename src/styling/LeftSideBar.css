@@ -1,0 +1,24 @@
+.left-sidebar {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 3cm));
+    align-content: start;
+    height: 100vh;
+    max-width: max-content;
+}
+
+.left-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-bottom: 2cm;
+}
+
+
+.left-icon:hover {
+    background-color: #e6ebf5;
+}
