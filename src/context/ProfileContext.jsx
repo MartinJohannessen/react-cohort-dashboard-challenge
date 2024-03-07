@@ -1,13 +1,13 @@
 import { createContext, useState, useCallback } from 'react';
 import PropTypes from 'prop-types'
-const ProfileContext = createContext();
-
+export const ProfileContext = createContext();
 
 export function ProfileProvider({ children }) {
     const [profile, setProfile] = useState({
         id: 1,
-        name: '',
-        bio: '',
+        name: 'Aartin Wohannessen',
+        bio: 'Dette er min bio',
+        favouriteColour: '#0d7f26'
     })
 
     const updateProfile = useCallback((updates) => {

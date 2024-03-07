@@ -1,0 +1,51 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-area {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #e6ebf5;
+    color: #333;
+    outline: none;
+    transition: background-color 0.3s;
+    resize: none;
+    /* Allow only vertical resizing */
+    overflow: hidden;
+    /* Hide scrollbar */
+    min-height: 38px;
+    max-height: 500px;
+    /* Maximum height before scrolling */
+}
+
+.input-area:focus {
+    background-color: #d0d7e6;
+}
+
+.input-area:hover {
+    background-color: #d0d7e6;
+}
+
+
+.input-field {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #e6ebf5;
+    color: #333;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.input-field:focus {
+    background-color: #d0d7e6;
+}
+
+.input-field:hover {
+    background-color: #d0d7e6;
+}

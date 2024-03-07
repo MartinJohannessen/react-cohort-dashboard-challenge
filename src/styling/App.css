@@ -1,10 +1,18 @@
 @import url('Header.css');
 @import url('LeftSideBar.css');
 @import url('Body.css');
+@import url('MainContent.css');
+@import url('Routes.css');
 
 /* General reset for margin and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }

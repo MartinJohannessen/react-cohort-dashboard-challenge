@@ -1,0 +1,16 @@
+.post-button {
+    background-color: #000046;
+    color: white;
+    border: none;
+    padding: 13px 50px;
+    margin-right: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: normal;
+    transition: background-color 0.3s;
+}
+
+.post-button:hover {
+    background-color: #64dc78;
+    /* Button hover color as per the specification */
+}

@@ -11,13 +11,13 @@ import { ContactsProvider } from './context/ContactsContext.jsx';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <ContactsProvider>
-        <ProfileProvider>
-          <PostsProvider>
+      <PostsProvider>
+        <ContactsProvider>
+          <ProfileProvider>
             <App />
-          </PostsProvider>
-        </ProfileProvider>
-      </ContactsProvider>
+          </ProfileProvider>
+        </ContactsProvider>
+      </PostsProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )

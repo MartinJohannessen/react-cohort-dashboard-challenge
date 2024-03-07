@@ -13,12 +13,14 @@ function App() {
       <Header />
       <div className="main-content">
         <LeftSideBar />
-        <Routes>
-          <Route path="/" element={<HomeRoute />} />
-          <Route path="/post/:postId" element={<PostRoute />} />
-          <Route path="/new-post" element={<CreatePostRoute />} />
-          <Route path="/profile/:profileId" element={<ProfileRoute />} />
-        </Routes>
+        <div className='routes-wrapper'>
+          <Routes >
+            <Route path="/" element={<HomeRoute />} />
+            <Route path="/post/:postId" element={<PostRoute />} />
+            <Route path="/new-post" element={<CreatePostRoute />} />
+            <Route path="/profile/:profileId" element={<ProfileRoute />} />
+          </Routes>
+        </div>
       </div>
     </div>
   );

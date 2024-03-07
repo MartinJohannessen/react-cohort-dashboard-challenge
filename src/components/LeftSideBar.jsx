@@ -3,7 +3,7 @@ export function LeftSideBar() {
         <nav className="left-sidebar">
             <div className="left-icon">
                 <svg className="left-icon-home" width="33" height="36" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.5 36V12L16.6 0L32.5 12V36H20.8V21.75H12.15V36H0.5Z" fill="#64648C" />
+                    <path d="M0.5 36V12L16.6 0L32.5 12V36H20.8V21.75H12.15V36H0.5Z" fill="#000046" />
                 </svg>
             </div>
             <div className="left-icon">
@@ -11,7 +11,7 @@ export function LeftSideBar() {
                     width="41"
                     height="40"
                     viewBox="0 0 41 40"
-                    fill="none"
+                    fill="#000046"
                     xmlns="http://www.w3.org/2000/svg"
                 >
                     <path

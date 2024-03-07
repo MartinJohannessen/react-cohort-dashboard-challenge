@@ -1,0 +1,13 @@
+.encircled-initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: black;
+    font-weight: bold;
+    font-size: 0.85rem;
+    font-family: 'Arial Rounded MT';
+    flex-shrink: 0;
+}

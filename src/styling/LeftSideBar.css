@@ -5,6 +5,7 @@
     align-content: start;
     height: 100vh;
     max-width: max-content;
+    flex-shrink: 0;
 }
 
 .left-icon {
