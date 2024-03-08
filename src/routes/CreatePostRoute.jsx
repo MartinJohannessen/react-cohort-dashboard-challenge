@@ -1,5 +1,0 @@
-export function CreatePostRoute() {
-    return (
-        <></>
-    )
-}

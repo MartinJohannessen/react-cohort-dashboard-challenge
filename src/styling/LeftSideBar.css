@@ -3,7 +3,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100%, 3cm));
     align-content: start;
-    height: 100vh;
+    height: 100%;
+    max-height: 100%;
     max-width: max-content;
     flex-shrink: 0;
 }
@@ -19,7 +20,23 @@
     margin-bottom: 2cm;
 }
 
+.left-icon svg {
+    fill: #000046;
+    /* This is the default fill color */
+    transition: fill 0.2s ease-in-out;
+    /* Transition for smooth color change */
+}
 
 .left-icon:hover {
     background-color: #e6ebf5;
+}
+
+.left-icon:hover svg {
+    fill: #64dc78;
+    /* New fill color on hover */
+}
+
+.left-icon:active svg {
+    fill: #000046;
+    /* New fill color on hover */
 }

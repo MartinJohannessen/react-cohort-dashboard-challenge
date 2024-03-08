@@ -1,6 +1,7 @@
 import EncircledInitials from "./EncircledInitials";
 import { useContext } from "react";
 import { ProfileContext } from "../context/ProfileContext.jsx";
+
 export function Header() {
     const { profile } = useContext(ProfileContext)
     return (

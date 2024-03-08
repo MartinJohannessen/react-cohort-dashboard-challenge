@@ -8,3 +8,14 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
+
+.comment-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #FFFFFF;
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: none;
+}

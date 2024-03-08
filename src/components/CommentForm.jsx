@@ -7,10 +7,10 @@ import { InputArea } from './InputArea.jsx';
 import PropTypes from 'prop-types'
 
 
-export function PostForm({ placeholder, isPost }) {
+export function CommentForm({ placeholder, isPost }) {
     const { profile } = useContext(ProfileContext)
     return (
-        <div className="post-form">
+        <div className="comment-form">
             <EncircledInitials profile={profile}></EncircledInitials>
             <InputArea
                 isPost={isPost}
@@ -20,7 +20,7 @@ export function PostForm({ placeholder, isPost }) {
         </div>
     )
 }
-PostForm.propTypes = {
+CommentForm.propTypes = {
     placeholder: PropTypes.string,
     isPost: PropTypes.bool
 }

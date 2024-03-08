@@ -1,11 +1,14 @@
 // context/ContactsContext.jsx
-import { createContext, useState, useCallback } from 'react'
+import { createContext, useState, useCallback, useEffect } from 'react'
 import PropTypes from 'prop-types'
-const ContactsContext = createContext()
+export const ContactsContext = createContext()
 
 export const ContactsProvider = ({ children }) => {
     const [contacts, setContacts] = useState([])
-    const [selectedContact, setSelectedContact] = useState(null)
+
+    const getContactById = useCallback((id) => {
+        return contacts.find(contact => contact.id === id);
+    }, [contacts]);
 
     const addContact = useCallback((newContact) => {
         setContacts((currentContacts) => [newContact, ...currentContacts])
@@ -19,13 +22,26 @@ export const ContactsProvider = ({ children }) => {
         setContacts((currentContacts) => currentContacts.filter(contact => contact.id !== contactId))
     }, [])
 
+    useEffect(() => {
+
+        const address = 'https://boolean-api-server.fly.dev/MartinJohannessen/contact'
+        const fetchData = () => {
+            fetch(address)
+                .then(res => res.json())
+                .then(contacts => setContacts(contacts)
+                )
+                .catch(error => console.error("Fetching contacts failed:", error));
+        };
+        fetchData();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+
     const contextValue = {
         contacts,
         addContact,
         updateContact,
         deleteContact,
-        selectedContact,
-        setSelectedContact,
+        getContactById
     }
 
     return (

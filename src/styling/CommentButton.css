@@ -1,0 +1,22 @@
+.comment-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.comment-button svg .comment-button-circle {
+    transition: fill 0.2s ease-in-out;
+}
+
+.comment-button:hover svg .comment-button-circle {
+    fill: #64dc78;
+}
+
+.comment-button:active svg .comment-button-circle {
+    fill: #000046;
+}

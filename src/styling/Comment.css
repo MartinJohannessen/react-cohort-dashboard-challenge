@@ -1,0 +1,38 @@
+.comment {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding-bottom: 10px;
+
+
+}
+
+.comment-body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial Rounded MT';
+    padding: 12px;
+    padding-right: 15%;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #e6ebf5;
+    color: #333;
+    transition: background-color 0.3s;
+    resize: none;
+    overflow: hidden;
+    min-height: 70px;
+    max-height: 500px;
+    gap: 10px
+}
+
+.comment-name {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.comment-content {
+    color: #64648c;
+    font-weight: bold;
+    font-size: 0.8rem;
+}

@@ -1,4 +1,6 @@
 .main-content {
+    background-color: #F0F5FA;
+    height: 100%;
     display: flex;
-    flex-grow: 1;
+    overflow: hidden;
 }

@@ -14,3 +14,8 @@
     background-color: #64dc78;
     /* Button hover color as per the specification */
 }
+
+.post-button:active {
+    background-color: #000046;
+    /* Button hover color as per the specification */
+}

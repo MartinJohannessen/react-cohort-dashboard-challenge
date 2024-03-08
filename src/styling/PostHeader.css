@@ -1,0 +1,23 @@
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-header-info {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial Rounded MT';
+}
+
+.name {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.bio {
+    color: #64648c;
+    font-weight: bold;
+    font-size: .7rem;
+}

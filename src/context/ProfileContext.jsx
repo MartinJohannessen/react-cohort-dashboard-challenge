@@ -5,7 +5,8 @@ export const ProfileContext = createContext();
 export function ProfileProvider({ children }) {
     const [profile, setProfile] = useState({
         id: 1,
-        name: 'Aartin Wohannessen',
+        firstName: 'Aartin',
+        lastName: 'Wohannessen',
         bio: 'Dette er min bio',
         favouriteColour: '#0d7f26'
     })

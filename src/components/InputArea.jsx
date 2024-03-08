@@ -1,7 +1,8 @@
 import '../styling/InputContainer.css'; // Make sure to create an InputField.css file in the same directory
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-export function InputArea({ name, value, onChange, placeholder }) {
+import { CommentButton } from './CommentButton.jsx';
+export function InputArea({ name, value, onChange, placeholder, isPost }) {
 
     const [text, setText] = useState('')
     const rows = text.split("\n").length
@@ -16,6 +17,7 @@ export function InputArea({ name, value, onChange, placeholder }) {
                 placeholder={placeholder}
                 rows={rows}
             />
+            {isPost ? <></> : <CommentButton></CommentButton>}
         </div>
     )
 }
@@ -27,5 +29,6 @@ InputArea.propTypes = {
         PropTypes.number
     ]),
     onChange: PropTypes.func,
-    placeholder: PropTypes.string
+    placeholder: PropTypes.string,
+    isPost: PropTypes.bool
 };

@@ -4,15 +4,14 @@ import PropTypes from 'prop-types';
 export default function EncircledInitials({ profile }) {
 
 
-    const getInitials = (name) => {
-        const namesArray = name.split(' ');
-        const initials = namesArray.map((n) => n[0]).join('');
+    const getInitials = (profile) => {
+        const initials = profile.firstName[0] + profile.lastName[0];
         return initials.toUpperCase();
     };
 
     return (
         <div className="encircled-initials" style={{ backgroundColor: profile.favouriteColour }}>
-            {getInitials(profile.name)}
+            {getInitials(profile)}
         </div>
     );
 }
