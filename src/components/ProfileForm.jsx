@@ -6,6 +6,7 @@ import { ProfileContext } from "../context/ProfileContext.jsx";
 import '../styling/InputForm.css'
 import '../styling/InputContainer.css'
 import '../styling/PostButton.css'
+import { ProfileHeader } from './ProfileHeader.jsx';
 
 export function ProfileForm() {
 
@@ -38,22 +39,26 @@ export function ProfileForm() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <div>
-                <div className='input-container'>
-                    <InputField label="First Name" name="firstName" value={formData.firstName} onChange={handleChange} />
-                    <InputField label="Last Name" name="lastName" value={formData.lastName} onChange={handleChange} />
-                    <InputField label="Street" name="street" value={formData.street} onChange={handleChange} />
-                    <InputField label="City" name="city" value={formData.city} onChange={handleChange} />
+            <div className='profile-view'>
+                <h2>Profile</h2>
+                <div><ProfileHeader></ProfileHeader></div>
+                <div className='profile-form'>
+                    <div className='input-container'>
+                        <InputField label="First Name" name="firstName" value={formData.firstName} onChange={handleChange} />
+                        <InputField label="Last Name" name="lastName" value={formData.lastName} onChange={handleChange} />
+                        <InputField label="Street" name="street" value={formData.street} onChange={handleChange} />
+                        <InputField label="City" name="city" value={formData.city} onChange={handleChange} />
+                    </div>
+                    <div className='input-container'>
+                        <InputField label="Gender" name="gender" value={formData.gender} onChange={handleChange} />
+                        <InputField label="Email" name="email" value={formData.email} onChange={handleChange} />
+                        <InputField label="Job Title" name="jobTitle" value={formData.jobTitle} onChange={handleChange} />
+                        <InputField label="Favourite Colour" name="favouriteColour" value={formData.favouriteColour} onChange={handleChange} />
+                        <InputField label="Profile Image URL" name="profileImage" value={formData.profileImage} onChange={handleChange} />
+                    </div>
                 </div>
-                <div className='input-container'>
-                    <InputField label="Gender" name="gender" value={formData.gender} onChange={handleChange} />
-                    <InputField label="Email" name="email" value={formData.email} onChange={handleChange} />
-                    <InputField label="Job Title" name="jobTitle" value={formData.jobTitle} onChange={handleChange} />
-                    <InputField label="Favourite Colour" name="favouriteColour" value={formData.favouriteColour} onChange={handleChange} />
-                    <InputField label="Profile Image URL" name="profileImage" value={formData.profileImage} onChange={handleChange} />
-                </div>
-                <div>
-                    <button className='post-button' type="submit">Update Profile</button>
+                <div className='button-container'>
+                    <button className='profile-button' type="submit">Save</button>
                 </div>
             </div>
         </form>
