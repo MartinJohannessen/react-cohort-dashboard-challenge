@@ -23,11 +23,6 @@
     gap: 10px;
 }
 
-.profile-initials {
-    width: 70px;
-    height: 70px;
-}
-
 .separator {
     border: none;
     height: 1px;
@@ -45,7 +40,7 @@
 .button-container {
     display: flex;
     justify-content: flex-end;
-    margin-top: 1rem;
+    margin: 1rem;
 }
 
 .profile-button {
