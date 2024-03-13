@@ -1,8 +1,16 @@
 .input-container {
     display: flex;
     flex-direction: column;
-    width: 98%;
     position: relative;
+    width: 100%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+}
+
+.input-container label {
+    padding-left: 10px;
+    color: #333;
 }
 
 .input-area {

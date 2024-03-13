@@ -4,6 +4,7 @@ import { PostHeader } from "./PostHeader.jsx";
 import { useContext } from "react";
 import { PostsContext } from "../context/PostsContext.jsx";
 import { CommentsSection } from './CommentsSection.jsx';
+import { Link } from 'react-router-dom';
 
 export function PostFeed() {
     const { posts, isLoaded } = useContext(PostsContext)
@@ -13,10 +14,12 @@ export function PostFeed() {
             <div className='feed'>
                 {posts.map((post, index) => (
                     <div className='post' key={index}>
-                        < PostHeader
+                        <PostHeader
                             post={post}
-                        ></PostHeader >
-                        <h4 className='post-title'>{post.title}</h4>
+                        ></PostHeader>
+                        <Link to={`/post/${post.id}`} className='post-title-link'>
+                            <h4 >{post.title}</h4>
+                        </Link>
                         <p className='post-content'>{post.content}</p>
                         <hr className="post-separator" />
                         <CommentsSection
@@ -24,7 +27,6 @@ export function PostFeed() {
                         ></CommentsSection>
                     </div>
                 ))}
-
             </div>
         )
     }

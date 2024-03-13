@@ -11,6 +11,16 @@
     font-weight: normal;
 }
 
+.post-title-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-title-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
 .post-content {
     font-size: .9rem;
 }

@@ -8,6 +8,10 @@ export const PostsProvider = ({ children }) => {
     const [isLoaded, setIsLoaded] = useState(false)
 
 
+    const getPostById = useCallback((id) => {
+        return posts.find(post => post.id == id);
+    }, [posts]);
+
     const addPost = useCallback((newPost) => {
         setPosts((existing) => [...existing, newPost]);
     }, []);
@@ -58,6 +62,7 @@ export const PostsProvider = ({ children }) => {
         isLoaded,
         updatePost,
         deletePost,
+        getPostById
     };
 
     return (
